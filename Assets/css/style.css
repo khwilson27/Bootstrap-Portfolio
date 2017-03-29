@@ -64,10 +64,7 @@ label {
 }
 
 
-
-
-
-
+/*portfolio image settings*/
 .title {
 	background-color: #4aaaa5;
 	color: white;
@@ -81,41 +78,43 @@ label {
 }
 .img1 {
 	background: url("../images/portfolio1.jpg");
-	height: 200px;
-	width: 270px;
 }
 .img2 {
 	background: url("../images/portfolio2.jpg");
-	height: 200px;
-	width: 270px;
 }
 .img3 {
 	background: url("../images/portfolio3.jpg");
-	height: 200px;
-	width: 270px;
 }
 .img4 {
 	background: url("../images/portfolio4.jpg");
-	height: 200px;
-	width: 270px;
 }
 .img5 {
 	background: url("../images/portfolio5.jpg");
-	height: 200px;
-	width: 270px;
 }
 .img1, .img2, .img3, .img4, .img5 {
 	margin-left: 30px;
-	margin: 40px;
+	margin: 42px;
 	float: left;
+	height: 200px;
+	width: 270px;
 }
 
+/*media screen styling*/
+@media screen and (max-width: 980px) {
+		.imgGrid {
+			width: 390px;
+			padding: 0px;
+			overflow: auto;
+			display: block;
+		}
 
-
-
-
-@media screen and (max-width: 980px) {}
-@media screen and (max-width: 768px) {
+		.img1, .img2, .img3, .img4, .img5 {
+			margin: 25px;
+			margin-left: 20%;
+			float: none;
+		}
+}
+@media screen and (max-width: 767px) {
 	#brandname {
 		color: white;
 		margin-left: 0px;
@@ -126,9 +125,35 @@ label {
 	#headerLink1 {
 		padding-left: 37%;
 	}
+
+	.imgGrid {
+		margin-left: 0px;
+		width: 680px;
+		padding: 20px;
+		overflow: auto;
+		display: block;
+	}
+
+	.img1, .img2, .img3, .img4, .img5 {
+		margin: 25px;
+		float: left;
+	}
+
 }
 @media screen and (max-width: 640px) {
 	#headerLink1 {
-		padding-left: 35%;
+		padding-left: 34%;
+	}
+
+	.imgGrid {
+		width: 500px;
+		padding: 0px;
+		overflow: auto;
+		display: block;
+	}
+
+	.img1, .img2, .img3, .img4, .img5 {
+		margin-left: 30%;
+		float: none;
 	}
 }
